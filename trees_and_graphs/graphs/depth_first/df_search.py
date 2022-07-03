@@ -16,7 +16,7 @@ def df_search(vertex, search_value, visited_vertices=set()):
             # Attempt to find the vertex we're searching for by recursively
             # calling this method on the adjacent vertex:
             sought_vertex = df_search(adjacent_vertex, search_value, visited_vertices)
-            # If we were able to find the correct vertex using the above recursion,
+            # If we were able to find the correct vertex using the above dynamic_programming,
             # return the correct vertex:
             if sought_vertex:
                 return sought_vertex
