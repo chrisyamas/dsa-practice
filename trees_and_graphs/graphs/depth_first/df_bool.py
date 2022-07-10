@@ -1,4 +1,4 @@
-from trees_and_graphs.graphs.vertex_undirected import Vertex
+from trees_and_graphs.graphs.vertex_undirected_unweighted import Vertex
 
 
 def df_bool(vertex, search_value, visited=set()):

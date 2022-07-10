@@ -1,4 +1,4 @@
-from trees_and_graphs.graphs.vertex_undirected import Vertex
+from trees_and_graphs.graphs.vertex_undirected_unweighted import Vertex
 from stacks_and_queues.queues.queue import Queue
 
 

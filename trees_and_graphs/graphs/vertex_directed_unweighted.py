@@ -8,4 +8,4 @@ class Vertex:
         self.adjacents = set()
     
     def add_adjacent(self, vertex):
-        self.adjacents.append(vertex)
+        self.adjacents.add(vertex)
