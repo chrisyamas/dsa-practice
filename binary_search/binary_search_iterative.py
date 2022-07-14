@@ -1,3 +1,4 @@
+# Classic problem, prompted by LeetCode 704. Binary Search
 
 def binary_search_iterative(nums, target):
     low = 0
