@@ -2,7 +2,7 @@
 # My solution below
 
 
-def fizzBuzz(self, n: int) -> List[str]:
+def fizz_buzz(n):
     fb_list = []
     for i in range(1, n + 1):
         if not i % 3 and not i % 5:
