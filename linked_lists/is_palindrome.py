@@ -21,3 +21,24 @@ def reverse_list_is_palindrome(head):
 
     return False
 
+
+# Quicker approach (Two Pointers in array/list):
+# traverses linked list, makes list of values, use two pointers in list,
+# works inward comparing values.
+def two_pointers_is_palindrome(head):
+    values = []
+    current = head
+
+    while current:
+        values.append(current.val)
+        current = current.next
+
+    low = 0
+    high = len(values) - 1
+
+    while low < high:
+        if not values[low] == values[high]:
+            return False
+
+    return True
+
