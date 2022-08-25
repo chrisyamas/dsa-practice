@@ -42,3 +42,13 @@ def two_pointers_is_palindrome(head):
 
     return True
 
+
+# Simpler syntax version of above solution:
+def simpler_two_pointers_is_palindrome(head):
+    values = []
+    current = head
+    while current:
+        values.append(current.val)
+        current = current.next
+    return values == values[::-1]
+
