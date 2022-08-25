@@ -52,3 +52,25 @@ def simpler_two_pointers_is_palindrome(head):
         current = current.next
     return values == values[::-1]
 
+
+# Recursive Approach (as method, *** copied from LeetCode Solution section ***)
+# to be used as reference for understanding recursive approach
+class Solution(object):
+    def isPalindrome(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        # Recursive Approach:
+        self.front_pointer = head
+
+        def recursively_check(current_node=head):
+            if current_node is not None:
+                if not recursively_check(current_node.next):
+                    return False
+                if self.front_pointer.val != current_node.val:
+                    return False
+                self.front_pointer = self.front_pointer.next
+            return True
+
+        return recursively_check()
