@@ -19,3 +19,9 @@ def shuffle(nums, n):
     return new_nums
 
 
+# One-liner from LeetCode user Wartem
+from itertools import chain
+
+
+def one_line_shuffle(nums, n):
+    return list(chain.from_iterable((nums[i], nums[i+n]) for i in range(n)))
