@@ -7,7 +7,7 @@ or false otherwise.
 """
 
 
-# First Attempt: Failed (needs to be debugged)
+# First Successful Attempt
 def unique_occurrences(arr):
     count_hash = {}
     for x in arr:
@@ -15,5 +15,5 @@ def unique_occurrences(arr):
             count_hash[x] += 1
         else:
             count_hash[x] = 1
-    counts_list = list(count_hash.keys())
-    return counts_list == set(counts_list)
+    counts_list = list(count_hash.values())
+    return len(counts_list) == len(set(counts_list))
