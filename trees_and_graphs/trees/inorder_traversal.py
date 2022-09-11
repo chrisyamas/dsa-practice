@@ -22,3 +22,8 @@ def inorder_traversal(root):
             traverse(node.right, values)
         return values
     return traverse(root)
+
+
+# One-line solution from LC user 'wingkwong'
+def one_line(root):
+    return one_line(root.left) + [root.val] + one_line(root.right) if root else []
