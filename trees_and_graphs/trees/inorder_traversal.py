@@ -11,3 +11,14 @@
 Given the root of a binary tree,
 return the inorder traversal of its nodes' values.
 """
+
+
+# My initial, successful solution
+def inorder_traversal(root):
+    def traverse(node, values=[]):
+        if node:
+            traverse(node.left, values)
+            values.append(node.val)
+            traverse(node.right, values)
+        return values
+    return traverse(root)
