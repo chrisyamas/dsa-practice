@@ -6,6 +6,8 @@ def binary_search_rec(array, search_val):
     else returns -1.
     """
     def bs_rec(arr, lo, hi, x):
+        # Check if high index greater than or equal to low index
+        # i.e. there are still elements to consider
         if hi >= lo:
             mid = (hi + lo) // 2
             if arr[mid] == x:
