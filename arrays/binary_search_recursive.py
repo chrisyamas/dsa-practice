@@ -13,6 +13,7 @@ def binary_search_rec(array, search_val):
             # Calculate middle index of current array section
             mid = (hi + lo) // 2
 
+            # Check if middle element is search value
             if arr[mid] == x:
                 return mid
             elif arr[mid] > x:
