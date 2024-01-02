@@ -15,6 +15,7 @@ def binary_search_rec(array, search_val):
 
             # Check if middle element is search value
             if arr[mid] == x:
+                # Returns middle element if found to be search value
                 return mid
 
             # Check if middle element is greater than search value
@@ -27,6 +28,7 @@ def binary_search_rec(array, search_val):
                 # Run search on upper half of current array section
                 return bs_rec(arr, mid + 1, hi, x)
 
+        # All array elements have been searched without value found
         else:
             return -1
     return bs_rec(array, 0, len(array) - 1, search_val)
