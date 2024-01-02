@@ -22,6 +22,7 @@ def binary_search_rec(array, search_val):
                 # Run search on lower half of current array section
                 return bs_rec(arr, lo, mid - 1, x)
 
+            # Check if middle element is less than search value
             elif arr[mid] < x:
                 return bs_rec(arr, mid + 1, hi, x)
 
