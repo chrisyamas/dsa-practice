@@ -31,4 +31,6 @@ def binary_search_rec(array, search_val):
         # All array elements have been searched without value found
         else:
             return -1
+
+    # Initial call of the inner recursive function
     return bs_rec(array, 0, len(array) - 1, search_val)
