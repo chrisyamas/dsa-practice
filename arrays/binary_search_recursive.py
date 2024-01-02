@@ -9,7 +9,10 @@ def binary_search_rec(array, search_val):
         # Check if high index greater than or equal to low index
         # i.e. there are still elements to consider
         if hi >= lo:
+            
+            # Calculate middle index of current array section
             mid = (hi + lo) // 2
+
             if arr[mid] == x:
                 return mid
             elif arr[mid] > x:
