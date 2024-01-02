@@ -16,6 +16,8 @@ def binary_search_rec(array, search_val):
             # Check if middle element is search value
             if arr[mid] == x:
                 return mid
+
+            # Check if middle element is greater than search value
             elif arr[mid] > x:
                 return bs_rec(arr, lo, mid - 1, x)
             elif arr[mid] < x:
