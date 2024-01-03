@@ -1,12 +1,17 @@
 # LeetCode 69. Sqrt(x)
 
 
-# Initial Brute Force Solution
+# A simple brute force solution for finding the square root of x.
 def slow_my_sqrt(x):
+    # Iterate over numbers from 0 to x.
     for i in range(x + 1):
+        # Check if the square of the number is greater than x.
         if i * i > x:
+            # If so, return the previous number as the integer square root.
             return i - 1
+        # Check if the square of the number is exactly equal to x.
         elif i * i == x:
+            # If so, return this number as the integer square root.
             return i
 
 
