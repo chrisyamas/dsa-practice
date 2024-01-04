@@ -6,8 +6,6 @@ and false otherwise.
 An Anagram is a word or phrase formed by rearranging the letters of a different
 word or phrase, typically using all the original letters exactly once.
 """
-
-
 def is_anagram(s: str, t: str) -> bool:
     def get_string_hash(string):
         string_hash = {}
