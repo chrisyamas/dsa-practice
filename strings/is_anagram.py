@@ -9,7 +9,7 @@ word or phrase, typically using all the original letters exactly once.
 def is_anagram(s: str, t: str) -> bool:
     def get_string_hash(string):
         string_hash = {}
-        for char in s:
+        for char in string:
             if string_hash.get(char):
                 string_hash[char] += 1
             else:
