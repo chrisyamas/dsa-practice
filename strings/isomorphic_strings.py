@@ -20,7 +20,7 @@ def is_isomorphic(s, t):
             mapping_t_s[c2] = c1
 
         # Case 2: Either mapping doesn't exist in one dictionary or mapping
-        # exists but doesn't match in either or both of the dictionaries
+        #  exists but doesn't match in either or both of the dictionaries
         elif mapping_s_t.get(c1) != c2 or mapping_t_s(c2) != c1:
             return False
 
